@@ -1,11 +1,21 @@
 package br.com.alura.bytebank.modelo
 
 abstract class Conta(
-    var titular: String,
+    var titular: Cliente,
     val numero: Int
 ) {
     var saldo = 0.0
         protected set
+
+    //compartilha suas properties e se torna membro da Classe para ser manipulável
+    companion object {
+        var total = 0
+            private set
+    }
+
+    init {
+        total++
+    }
 
     fun deposita(valor: Double) {
         if (valor > 0) {

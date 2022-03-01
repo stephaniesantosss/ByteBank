@@ -1,14 +1,23 @@
+import br.com.alura.bytebank.modelo.Cliente
 import br.com.alura.bytebank.modelo.ContaCorrente
 import br.com.alura.bytebank.modelo.ContaPoupanca
+import br.com.alura.bytebank.modelo.Endereco
 
 fun testaContasDiferentes() {
+    val endereco = Endereco("rua a", 1, "ABC", "Barueri", "SP","123456", "ap02")
+    val jhony = Cliente(nome = "Jhony", cpf = "", senha = 2, endereco = endereco)
+
+    println("Jhony: ${jhony.endereco}")
+
     val contaCorrente = ContaCorrente(
-        titular = "Jhony",
+        titular = jhony,
         numero = 1000
     )
 
+    val stephanie = Cliente(nome = "Steohanie", cpf = "", senha = 1)
+
     val contaPoupanca = ContaPoupanca(
-        titular = "Stephanie",
+        titular = stephanie,
         numero = 1010
     )
 
