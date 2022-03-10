@@ -1,5 +1,8 @@
 package br.com.alura.bytebank
 
-fun main() {
+import br.com.alura.array.testandoArrayDeObjetos
 
+fun main() {
+    testandoArrayDeObjetos()
 }
+
