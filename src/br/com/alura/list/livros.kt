@@ -1,26 +1,26 @@
 package br.com.alura.list
 
-val listaDeLivros: MutableList<Livro?> = mutableListOf(
+val listaDeLivros: MutableList<Livro> = mutableListOf(
     Livro(
-        titulo = "A",
+        titulo = "A garota que roubava livros",
         autor = "Jose",
         anoPublicacao = 2021
     ),
-    null,
+    //null,
     Livro(
-        titulo = "B",
+        titulo = "Clean Code",
         autor = "Maria",
         anoPublicacao = 2022
     ),
-    null,
+    //null,
     Livro(
-        titulo = "C",
+        titulo = "Mindset",
         autor = "Pedro",
         anoPublicacao = 2019
     ),
-    null,
+    //null,
     Livro(
-        titulo = "D",
+        titulo = "Solid",
         autor = "Joao",
         anoPublicacao = 2025
     )
